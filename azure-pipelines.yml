@@ -1,5 +1,5 @@
 # Enable CI builds, trigger a build whenever the master branch receive new modifications
-trigger: ['master']
+trigger: ['main']
 pr: none # Disable PR builds entirely
 
 pool:
