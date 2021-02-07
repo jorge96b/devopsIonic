@@ -1,9 +1,9 @@
 # Enable CI builds, trigger a build whenever the master branch receive new modifications
-trigger: ['main']
-pr: none # Disable PR builds entirely
+trigger:
+- 'main'
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-20.04'
 
 steps:
 # This task trigger a new build to run, this build is the same as the step above that generates the bundle
